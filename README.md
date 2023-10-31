@@ -1,6 +1,6 @@
 # Online Book Library Application
 
-This is a backend-only Online Book Library application that provides REST endpoints for managing users, books, book borrowing and returning, book reservations (optional), book reviews and ratings, and user history (optional). The application uses Spring Security for role-based authentication and MySQL for the database.
+This is a backend and frontend Online Book Library application that provides REST endpoints for managing users, books, book borrowing and returning, book reservations (optional), book reviews and ratings, and user history (optional). The application uses Spring Security for role-based authentication and MySQL for the database.
 
 ## User Management Endpoints
 
