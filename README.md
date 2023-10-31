@@ -1,11 +1,11 @@
 # Online Book Library Application
 
-This project is an Online Book Library application designed to provide users with a platform for managing their book-related activities. It serves as a back-end only application, focusing on the development of RESTful API endpoints. The application is built using Java Spring Boot and utilizes Spring Security for role-based authentication. MySQL is used as the backend database to store user and book-related information.
+This project is a comprehensive Online Book Library application that combines both a backend and a frontend. The backend is built with Java Spring Boot, utilizing Spring Security for role-based authentication, and MySQL for the database. The frontend is developed using HTML, CSS, Bootstrap, and React to provide users with a rich and interactive user interface.
 
-## Key Features
+## Backend Features
 
 ### User Management Endpoints
-1. **/user/register:** This endpoint allows users to register by providing their personal information, including first name, last name, email, password, and address.
+1. **/user/register:** Allows users to register by providing their personal information, including first name, last name, email, password, and address.
 2. **/user/login:** Users can log in using their email and password, receiving a token as a response for authentication. User email should be present in the payload data.
 3. **/users/{userId}:** Retrieve user details by userId. Only users with ADMIN roles should have access to this API.
 4. **/users/{userId}/books:** Retrieve the books borrowed or owned by a specific user. This endpoint can be accessed by the user to view their own books or by an ADMIN to view any user's books.
@@ -34,19 +34,44 @@ This project is an Online Book Library application designed to provide users wit
 ### User History (Optional)
 1. **/users/{userId}/history:** Allow users to view their borrowing history, including borrowed books, due dates, and return dates.
 
+## Frontend Features
+
+The frontend of the application is built using React, HTML, CSS, and Bootstrap, providing an intuitive and user-friendly interface for users to interact with the backend functionality. Users can perform the following actions from the frontend:
+
+- Register and log in with their credentials.
+- View and manage their personal information.
+- Browse and search for available books in the library.
+- Borrow books and track their due dates.
+- Leave reviews and ratings for books.
+- View their borrowing history.
+
 ## Technologies Used
+
+### Backend
 - Java Spring Boot
 - Spring Security
 - MySQL
 
+### Frontend
+- React
+- HTML
+- CSS
+- Bootstrap
+
 ## Getting Started
-To run this application locally, you need to set up the necessary database and configure the application properties. Follow these steps in the project's root directory:
+
+### Backend
 1. Clone the repository.
 2. Configure the database connection in `application.properties`.
-3. Build and run the project.
+3. Build and run the Spring Boot application.
+
+### Frontend
+1. Navigate to the `frontend` directory.
+2. Install dependencies using `npm install`.
+3. Start the React application with `npm start`.
 
 ## Usage
-After setting up the project, you can use tools like Postman to interact with the RESTful endpoints provided by the application.
+After setting up both the backend and frontend, users can access the Online Book Library application through the web interface created with React.
 
 ## Contributors
-- [Md. Moien Uddin]
+- [Md.Moien Uddin]
